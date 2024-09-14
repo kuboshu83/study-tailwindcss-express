@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
-    <h1 class="text-red-600">Hello Typescript</h1>
+    <div class="flex flex-col min-w-[360px] h-screen">
+      <header class="bg-gray-300 h-16 flex items-center justify-between">
+        <h1 class="ml-5 text-2xl">Sample Page</h1>
+        <nav class="flex mr-5 gap-3">
+          <div>ログイン</div>
+          <div>ユーザ登録</div>
+        </nav>
+      </header>
+      <main
+        class="flex-1 bg-gray-100 flex flex-col justify-center items-center"
+      >
+        <div class="flex flex-col w-[360px]">
+          <h1 class="text-3xl mb-5">ユーザ登録</h1>
+          <form action="#" method="post" class="flex flex-col gap-3">
+            <section class="flex flex-col gap-1">
+              <label for="name">名前</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="名前"
+                class="border border-blue-100 p-1 rounded-md"
+              />
+            </section>
+            <section class="flex flex-col gap-1">
+              <label for="email">メールアドレス</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="メールアドレス"
+                class="border border-blue-100 p-1 rounded-md"
+              />
+            </section>
+            <section class="flex flex-col gap-1">
+              <label for="password">パスワード</label>
+              <input
+                type="text"
+                id="password"
+                name="password"
+                placeholder="パスワード"
+                class="border border-blue-100 p-1 rounded-md"
+              />
+            </section>
+            <div class="mt-5 flex flex-col gap-2">
+              <button
+                type="submit"
+                class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-1 px-1 border border-black rounded"
+              >
+                登録
+              </button>
+              <button
+                class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-1 px-1 border border-black rounded"
+              >
+                キャンセル
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="h-10 bg-gray-300 flex justify-center items-center">
+        <div class="text-sm">
+          This is sample page to study Tailwind CSS tutorial.
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
